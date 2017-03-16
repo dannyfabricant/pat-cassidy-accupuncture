@@ -1,0 +1,170 @@
+@media only screen and (max-device-width: 736px) {
+	html, body, header {
+		min-width: 0px;
+	}
+
+	header {
+		#site-title {
+			float: none;
+			width: 100%;
+			text-align: center;
+		}
+		#menu {
+			overflow: hidden;
+			float: none;
+			width: 100%;
+			text-align: center;
+			background-color: #fff;
+			.menu-item {
+				float: none;
+				display: inline-block;
+				a {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	main {
+		margin-top: 94px;
+		padding-bottom: 25px;
+	}
+
+	#home {
+		#slider-wrapper {
+			height: 300px;
+			.slider-image {
+				img {
+					min-width: 500px;
+				}
+			}
+		}
+		#home-description {
+			width: Calc(80% - 50px);
+			left: 10%;
+			font-size: 21px;
+			a {
+				font-size: 18px;
+			}
+		}
+		#locations {
+			.location {
+				width: 100%;
+				margin-bottom: 25px;
+				iframe {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	#About {
+		#about-graphic {
+			position: relative;
+			overflow: hidden;
+			float: none;
+			width: 100%;
+			height: 200px;
+			text-align: center;
+			img {
+				position: relative;
+				display: inline-block;
+				left: 0;
+				width: 150px;
+				height: auto;
+			}
+		}
+		#about-text {
+			float: none;
+			width: 100%;
+			padding-right: 0;
+			#about-title {
+				text-align: center;
+			}
+		}
+	}
+
+	#Services {
+		#services-container {
+			.service {
+				float: none;
+				width: Calc(100% - 20px);
+				padding: 25px 10px;
+				text-align: center;
+			}
+		}
+		#ailments {
+			width: Calc(100% - 20px);
+			padding: 25px 10px;
+			.bowl-image {
+				float: none;
+				width: 100%;
+				height: 100px;
+				display: none;
+			}
+			#ailments-description {
+				width: 100%;
+			}
+			.bowl-image:first-of-type {
+				display: block;
+			}
+			#ailments-container {
+				width: 100%;
+				.ailment {
+					font-size: 21px;
+				}
+			}
+		}
+	}
+
+	#contact {
+		#contact-wrap {
+			overflow: hidden;
+			#contacts {
+				float: none;
+				width: Calc(100% - 20px);
+				padding: 25px 10px;
+				text-align: center;
+				.contact {
+					margin-bottom: 25px;
+					float: none;
+				}
+				.contact:first-of-type {
+					margin-right: 0px;
+				}
+			}
+			#contact-description {
+				width: Calc(100% - 20px);
+				padding: 25px 10px;
+				text-align: center;
+				p {
+					width: 100%;
+				}
+			}
+		}
+		#locations {
+			.location {
+				width: 100%;
+				margin-bottom: 25px;
+				iframe {
+					margin-bottom: 10px;
+				}
+			}
+			.location:last-of-type {
+				padding-left: 0px;
+				margin-top: 50px;
+			}
+		}
+	}
+
+	#forms {
+		.form {
+			width: 100%;
+			float: none;
+		}
+	}
+}
+
+
+
+
+

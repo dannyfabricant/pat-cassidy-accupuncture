@@ -1,0 +1,26 @@
+Title: home
+
+----
+
+Intro: 
+
+----
+
+Text: 
+
+----
+
+Email: pcassidy43@gmail.com
+
+----
+
+Email-info: I practice in Park Slope, Brooklyn and in Manhattan near Columbus Circle. For more information and availability reach me by email.
+
+----
+
+Photos: 
+
+- 
+  photo: lemonade-house_0.jpg
+- 
+  photo: moraine_lake_17092005.jpg

@@ -1,0 +1,12 @@
+title: About
+
+fields:
+  called:
+    label: Title
+    type : text
+  photo:
+    label: Photo
+    type: image
+  text:
+    label: Text
+    type:  textarea

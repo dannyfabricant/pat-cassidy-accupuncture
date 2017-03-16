@@ -1,0 +1,72 @@
+Description: Services
+
+----
+
+Services: 
+
+- 
+  service: Acupuncture
+  description: >
+    Pat was trained in Traditional Chinese
+    Medicine and went on to study various
+    other techniques, such as Korean Hand
+    Acupuncture, Richard Tan’s style and
+    abdominal acupuncture.
+- 
+  service: Herbal Therapy
+  description: >
+    Herbal therapy is used to enhance
+    acupuncture and manual therapy
+    treatments. Pat completed a Graduate
+    Mentorship Program in herbal therapy and
+    incorporates herbal treatment when
+    appropriate.
+- 
+  service: Manual Therapy
+  description: 'Currently enrolled in the Osteopathic College of Ontario’s training program, Pat uses cranial-sacral work and other forms of manual therapy  to address structural problems and create overall balance for the patient.'
+
+----
+
+Title: Services
+
+----
+
+Treatments: 
+
+- 
+  treatment_name: Treatment 1
+- 
+  treatment_name: Treatment 2
+- 
+  treatment_name: Treatment 3
+
+----
+
+Ailment-description: I have been successfully treating a wide variety of health concerns since 2001 including but not limited to:
+
+----
+
+Ailments: 
+
+- 
+  treatment_name: musculoskeletal pain
+  ailment_name: musculoskeletal pain
+- 
+  treatment_name: cancer support
+  ailment_name: cancer support
+- 
+  treatment_name: gastrointestinal issues
+  ailment_name: gastrointestinal issues
+- 
+  treatment_name: women’s health
+  ailment_name: women’s health
+- 
+  treatment_name: labor and post-partum support
+  ailment_name: labor and post-partum support
+- 
+  treatment_name: tress-related anxiety
+  ailment_name: stress-related anxiety
+
+----
+
+Photo: mountains.jpg

@@ -1,0 +1,28 @@
+title: Home
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  intro:
+    label: Intro
+    type:  textarea
+
+  email_info:
+    label: email info
+    type:  textarea
+  email:
+    label: email
+    type: text
+  photos:
+    label: Photos
+    type: structure
+    fields:
+      photo:
+        type: selector
+        mode: single
+        types:
+          - image

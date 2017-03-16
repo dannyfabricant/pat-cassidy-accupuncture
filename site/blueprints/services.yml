@@ -1,0 +1,39 @@
+title: Services
+
+fields:
+  description:
+    label: Title
+    type : text
+
+  services:
+    label: Services
+    type: structure
+    fields:
+      service:
+        label: Service
+        type: text
+      description:
+        label: Description
+        type: textarea
+  line:
+    type: line
+  
+  photo:
+    label: Photo
+    type: image
+
+  line:
+    type: line
+
+  ailment_description:
+    label:  Ailment Description
+    type: textarea
+
+  ailments:
+    label: Ailment List
+    type: structure
+    entry: {{ailment_name}}
+    fields:
+      ailment_name: 
+        label: Ailment Name
+        type: text

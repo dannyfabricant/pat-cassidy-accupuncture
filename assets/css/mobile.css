@@ -1,0 +1,179 @@
+@media only screen and (max-device-width: 736px) {
+  /* line 2, ../sass/mobile.scss */
+  html, body, header {
+    min-width: 0px;
+  }
+
+  /* line 7, ../sass/mobile.scss */
+  header #site-title {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 12, ../sass/mobile.scss */
+  header #menu {
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+  /* line 18, ../sass/mobile.scss */
+  header #menu .menu-item {
+    float: none;
+    display: inline-block;
+  }
+  /* line 21, ../sass/mobile.scss */
+  header #menu .menu-item a {
+    font-size: 12px;
+  }
+
+  /* line 27, ../sass/mobile.scss */
+  main {
+    margin-top: 94px;
+    padding-bottom: 25px;
+  }
+
+  /* line 33, ../sass/mobile.scss */
+  #home #slider-wrapper {
+    height: 300px;
+  }
+  /* line 36, ../sass/mobile.scss */
+  #home #slider-wrapper .slider-image img {
+    min-width: 500px;
+  }
+  /* line 41, ../sass/mobile.scss */
+  #home #home-description {
+    width: Calc(80% - 50px);
+    left: 10%;
+    font-size: 21px;
+  }
+  /* line 45, ../sass/mobile.scss */
+  #home #home-description a {
+    font-size: 18px;
+  }
+  /* line 50, ../sass/mobile.scss */
+  #home #locations .location {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  /* line 53, ../sass/mobile.scss */
+  #home #locations .location iframe {
+    margin-bottom: 10px;
+  }
+
+  /* line 61, ../sass/mobile.scss */
+  #About #about-graphic {
+    position: relative;
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+  }
+  /* line 68, ../sass/mobile.scss */
+  #About #about-graphic img {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    width: 150px;
+    height: auto;
+  }
+  /* line 76, ../sass/mobile.scss */
+  #About #about-text {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+  /* line 80, ../sass/mobile.scss */
+  #About #about-text #about-title {
+    text-align: center;
+  }
+
+  /* line 88, ../sass/mobile.scss */
+  #Services #services-container .service {
+    float: none;
+    width: Calc(100% - 20px);
+    padding: 25px 10px;
+    text-align: center;
+  }
+  /* line 95, ../sass/mobile.scss */
+  #Services #ailments {
+    width: Calc(100% - 20px);
+    padding: 25px 10px;
+  }
+  /* line 98, ../sass/mobile.scss */
+  #Services #ailments .bowl-image {
+    float: none;
+    width: 100%;
+    height: 100px;
+    display: none;
+  }
+  /* line 104, ../sass/mobile.scss */
+  #Services #ailments #ailments-description {
+    width: 100%;
+  }
+  /* line 107, ../sass/mobile.scss */
+  #Services #ailments .bowl-image:first-of-type {
+    display: block;
+  }
+  /* line 110, ../sass/mobile.scss */
+  #Services #ailments #ailments-container {
+    width: 100%;
+  }
+  /* line 112, ../sass/mobile.scss */
+  #Services #ailments #ailments-container .ailment {
+    font-size: 21px;
+  }
+
+  /* line 120, ../sass/mobile.scss */
+  #contact #contact-wrap {
+    overflow: hidden;
+  }
+  /* line 122, ../sass/mobile.scss */
+  #contact #contact-wrap #contacts {
+    float: none;
+    width: Calc(100% - 20px);
+    padding: 25px 10px;
+    text-align: center;
+  }
+  /* line 127, ../sass/mobile.scss */
+  #contact #contact-wrap #contacts .contact {
+    margin-bottom: 25px;
+    float: none;
+  }
+  /* line 131, ../sass/mobile.scss */
+  #contact #contact-wrap #contacts .contact:first-of-type {
+    margin-right: 0px;
+  }
+  /* line 135, ../sass/mobile.scss */
+  #contact #contact-wrap #contact-description {
+    width: Calc(100% - 20px);
+    padding: 25px 10px;
+    text-align: center;
+  }
+  /* line 139, ../sass/mobile.scss */
+  #contact #contact-wrap #contact-description p {
+    width: 100%;
+  }
+  /* line 145, ../sass/mobile.scss */
+  #contact #locations .location {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  /* line 148, ../sass/mobile.scss */
+  #contact #locations .location iframe {
+    margin-bottom: 10px;
+  }
+  /* line 152, ../sass/mobile.scss */
+  #contact #locations .location:last-of-type {
+    padding-left: 0px;
+    margin-top: 50px;
+  }
+
+  /* line 160, ../sass/mobile.scss */
+  #forms .form {
+    width: 100%;
+    float: none;
+  }
+}

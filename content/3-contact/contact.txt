@@ -1,0 +1,46 @@
+Addresses: 
+
+- 
+  name: Brooklyn
+  address: '426 10th Street, Brooklyn, NY  11215'
+  details: (bet 5th and 6th Ave.)
+- 
+  name: Columbus Circle
+  address: 250 W. 57th St., New York, NY 10019
+  details: Suite 629
+
+----
+
+Title: contact
+
+----
+
+Text: 
+
+I can be most easily reach by email at (email: pcassidy43@gmail.com text: pcassidy43@gmail.com).
+
+ I can also be reached by phone at (tel: 19172027418  text: 1-[917]-202-7418).
+
+----
+
+Emailtext: I can be most easily reach by email at
+
+----
+
+Email: pcassidy43@gmail.com
+
+----
+
+Phonetext: I can also be reached by phone at
+
+----
+
+Phone: 1-[917]-202-7418
+
+----
+
+Contact-description: It is best to reach my by email, however feel free to call and leave a message.
+
+----
+
+Contactdescription: It is best to reach my by email, however feel free to call and leave a message.

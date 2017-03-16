@@ -1,0 +1,22 @@
+title: Forms
+
+fields:
+  description:
+    label: Title
+    type : text
+  forms:
+    label: forms
+    type: structure
+    fields:
+      form_name:
+        label: Form name
+        type: text
+      form_description:
+        label: Form Description
+        type: textarea
+      pdffile:
+        label: Post Attachments
+        type:  selector
+        mode:  single
+        types:
+            - document

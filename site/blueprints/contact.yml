@@ -1,0 +1,29 @@
+title: contact
+
+pages: false
+
+fields:
+  contactdescription:
+    label: Contact Description
+    type: textarea
+  email:
+    label: Email
+    type: email
+  phone:
+    label: Phone Number
+    type: tel
+
+  addresses:
+    label: Addresses
+    type: structure
+    fields:
+      name:
+        label: Name
+        type: text
+      address:
+        label: Address
+        type: text
+      details:
+        label: Details
+        type: text
+
