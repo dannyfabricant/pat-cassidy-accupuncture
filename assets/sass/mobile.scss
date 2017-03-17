@@ -35,6 +35,8 @@
 			.slider-image {
 				img {
 					min-width: 500px;
+					margin-top: -50%;
+					transform: translateY(50%);
 				}
 			}
 		}

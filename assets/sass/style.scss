@@ -90,8 +90,8 @@ main {
 				min-width: 1024px;
 				width: 100%;
 				height: auto;
-				margin-top: 50%;
-				transform: translateY(-50%);
+				margin-top: -50%;
+				transform: translateY(50%);
 				opacity: 0.8;
 			}
 		}
