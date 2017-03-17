@@ -8,6 +8,14 @@ $(document).ready( function () {
 			$('header').animate({'max-height': '500px'}, 500);
 		}
 	});
+	$(window).resize(function() {
+		sizeText();
+	});
+	sizeText()
+	slider();
+});
+
+function sizeText() {
 	if(window.outerWidth <= 736) {
 		jQuery('#home-description').fitText(1.2);
 		jQuery('#about-text').fitText(1.6);
@@ -19,8 +27,7 @@ $(document).ready( function () {
 		jQuery('#ailments-description').fitText(2.2);
 		jQuery('#contact-description').fitText(2);
 	}
-	slider();
-});
+}
 
 function slider() {
 	var sliderTimer = setInterval( function() {
