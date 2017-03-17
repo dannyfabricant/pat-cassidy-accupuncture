@@ -282,13 +282,14 @@ main {
   width: Calc(50% - 13px);
   margin-top: 25px;
   margin-right: 25px;
+  text-align: center;
 }
-/* line 161, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 #home #locations .location iframe {
   width: 100%;
   height: 250px;
 }
-/* line 165, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 #home #locations .location .location-title {
   font-family: 'Roboto', helvetica, sans-serif;
   font-size: 18px;
@@ -296,17 +297,18 @@ main {
   margin-bottom: 10px;
   color: #6bbaa7;
 }
-/* line 172, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 #home #locations .location .address {
   font-family: "Gentium Basic", serif;
   font-size: 18px;
+  margin-bottom: 25px;
 }
-/* line 177, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 #home #locations .location:last-of-type {
   margin-right: 0px;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 #About #about-graphic {
   position: fixed;
   left: 0;
@@ -314,7 +316,7 @@ main {
   width: 40%;
   height: Calc(100% - 76px);
 }
-/* line 190, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #About #about-graphic img {
   position: absolute;
   bottom: 0;
@@ -322,14 +324,14 @@ main {
   width: 70%;
   height: auto;
 }
-/* line 198, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 #About #about-text {
   float: right;
   width: Calc(60% - 25px);
   padding-top: 50px;
   padding-right: 25px;
 }
-/* line 204, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 #About #about-text #about-title {
   width: 95%;
   margin: 0 auto;
@@ -338,7 +340,7 @@ main {
   font-size: 40px;
   color: #e8561e;
 }
-/* line 212, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 #About #about-text p {
   width: 95%;
   margin: 0 auto;
@@ -346,7 +348,7 @@ main {
   line-height: normal;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 #Services #services-container {
   overflow: hidden;
   position: relative;
@@ -354,13 +356,13 @@ main {
   margin-top: 50px;
   margin-bottom: 25px;
 }
-/* line 228, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 #Services #services-container .service {
   float: left;
   width: Calc(33% - 50px);
   padding: 25px;
 }
-/* line 232, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 #Services #services-container .service .title {
   margin-bottom: 10px;
   font-family: 'Roboto', helvetica, sans-serif;
@@ -368,12 +370,12 @@ main {
   font-weight: bold;
   color: #6bbaa7;
 }
-/* line 239, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 #Services #services-container .service .description {
   font-family: "Gentium Basic", serif;
   font-size: 21px;
 }
-/* line 245, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 #Services #services-photo {
   overflow: hidden;
   position: relative;
@@ -386,19 +388,19 @@ main {
   background-position: center;
   opacity: 0.8;
 }
-/* line 257, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 #Services #ailments {
   position: relative;
   padding: 25px;
   width: 100%;
 }
-/* line 261, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 #Services #ailments .bowl-image {
   float: left;
   width: 30%;
   text-align: center;
 }
-/* line 265, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 #Services #ailments .bowl-image img {
   display: inline-block;
   width: 100px;
@@ -406,7 +408,7 @@ main {
   margin-top: -50%;
   transform: translateY(50%);
 }
-/* line 273, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 #Services #ailments #ailments-description {
   float: left;
   width: 40%;
@@ -416,13 +418,13 @@ main {
   text-align: center;
   line-height: normal;
 }
-/* line 282, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 #Services #ailments #ailments-container {
   width: 50%;
   margin: 0 auto;
   text-align: center;
 }
-/* line 286, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 #Services #ailments #ailments-container .ailment {
   display: inline-block;
   padding: 10px;
@@ -433,16 +435,16 @@ main {
   color: #000;
 }
 
-/* line 299, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 #contact {
   padding-bottom: 50px;
 }
-/* line 301, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 #contact #contact-wrap {
   width: 100%;
   margin-top: 50px;
 }
-/* line 304, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 #contact #contact-wrap #contacts {
   float: left;
   overflow: hidden;
@@ -450,11 +452,11 @@ main {
   padding-left: 25px;
   padding-top: 25px;
 }
-/* line 310, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 #contact #contact-wrap #contacts .contact {
   float: left;
 }
-/* line 312, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 #contact #contact-wrap #contacts .contact .title {
   font-family: 'Roboto', helvetica, sans-serif;
   font-size: 21px;
@@ -462,45 +464,45 @@ main {
   color: #6bbaa7;
   margin-bottom: 10px;
 }
-/* line 319, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 #contact #contact-wrap #contacts .contact a {
   font-family: 'Roboto', helvetica, sans-serif;
   font-size: 21px;
   color: #000;
 }
-/* line 325, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 #contact #contact-wrap #contacts .contact:first-of-type {
   margin-right: 25px;
 }
-/* line 329, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 #contact #contact-wrap #contact-description {
   float: left;
   overflow: hidden;
   width: Calc(50% - 50px);
   padding: 25px;
 }
-/* line 334, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 #contact #contact-wrap #contact-description p {
   float: left;
   width: 80%;
 }
-/* line 340, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 #contact #locations {
   overflow: hidden;
   width: Calc(100% - 50px);
   padding: 25px;
 }
-/* line 344, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 #contact #locations .location {
   float: left;
   width: Calc(50% - 25px);
 }
-/* line 347, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 #contact #locations .location iframe {
   width: 100%;
   height: 250px;
 }
-/* line 351, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 #contact #locations .location .location-title {
   font-family: 'Roboto', helvetica, sans-serif;
   font-size: 18px;
@@ -508,55 +510,55 @@ main {
   margin-bottom: 10px;
   color: #6bbaa7;
 }
-/* line 358, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 #contact #locations .location .address {
   font-family: "Gentium Basic", serif;
   font-size: 18px;
 }
-/* line 363, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 #contact #locations .location:first-of-type {
   margin-right: 25px;
 }
-/* line 366, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 #contact #locations .location:last-of-type {
   padding-left: 25px;
 }
 
-/* line 372, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 #forms {
   width: 100%;
   padding-top: 50px;
 }
-/* line 375, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 #forms .form {
   float: left;
   width: 33%;
   margin: 50px 0;
   text-align: center;
 }
-/* line 380, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 #forms .form .form-inner {
   display: inline-block;
   text-align: left;
 }
-/* line 383, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 #forms .form .form-inner .icon {
   float: left;
   width: 50px;
   height: auto;
   padding-right: 10px;
 }
-/* line 388, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 #forms .form .form-inner .icon svg {
   fill: #6bbaa7;
 }
-/* line 392, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 #forms .form .form-inner .title {
   color: #6bbaa7;
   font-family: 'Roboto', helvetica, sans-serif;
   font-size: 18px;
 }
-/* line 397, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 #forms .form .form-inner .description {
   padding-top: 10px;
   width: 250px;
