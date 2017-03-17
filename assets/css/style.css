@@ -607,8 +607,8 @@ main {
   /* line 36, ../sass/mobile.scss */
   #home #slider-wrapper .slider-image img {
     min-width: 500px;
-    margin-top: -50%;
-    transform: translateY(50%);
+    margin-top: 50%;
+    transform: translateY(-50%);
   }
   /* line 43, ../sass/mobile.scss */
   #home #home-description {
