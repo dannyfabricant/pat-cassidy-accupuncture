@@ -33,6 +33,8 @@
     		$src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAE64xZLlf3WfbwBTIEsSjwYjHltLCZWU &q=";
 		?>
 			<div class='location'>
+				<div class='location-title'><?php echo $location->name() ?></div>
+                <div class='address'><?php echo $location->address() ?></div>
 	    		<iframe
 	    			scrollwheel="false"
 	    			zoom="false"
@@ -40,8 +42,6 @@
 					src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAE64xZLlf3WfbwBTIEsSjwYjHltLCZWU
 				&q=<?php echo $address; ?>" allowfullscreen>
 				</iframe>
-				<div class='location-title'><?php echo $location->name() ?></div>
-                <div class='adress'><?php echo $location->address() ?></div>
 	    	</div>
 		<?php endforeach; ?>		
     </div>
