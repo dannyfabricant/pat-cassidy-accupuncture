@@ -191,9 +191,10 @@ main {
 		height: Calc(100% - 76px);
 		img {
 			position: absolute;
-			bottom: 0;
-			left: 15%;
-			width: 70%;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 25%;
+			width: 50%;
 			height: auto;
 		}
 	}
