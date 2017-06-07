@@ -16,17 +16,18 @@ $(document).ready( function () {
 });
 
 function sizeText() {
-	if(window.outerWidth <= 736) {
-		jQuery('#home-description').fitText(1.2);
-		jQuery('#about-text').fitText(1.6);
-		jQuery('#ailments-description').fitText(1.6);
-		jQuery('#contact-description').fitText(1.4);
-	} else {
-		jQuery('#home-description').fitText(2);
-		jQuery('#about-text').fitText(2.4);
-		jQuery('#ailments-description').fitText(2.2);
-		jQuery('#contact-description').fitText(2);
-	}
+	$('#slider-tagline').fitText(1.4);
+	// if(window.outerWidth <= 736) {
+	// 	jQuery('#home-description').fitText(1.2);
+	// 	// jQuery('#about-text').fitText(1.6);
+	// 	jQuery('#ailments-description').fitText(1.6);
+	// 	jQuery('#contact-description').fitText(1.4);
+	// } else {
+	// 	jQuery('#home-description').fitText(2);
+	// 	// jQuery('#about-text').fitText(2.4);
+	// 	jQuery('#ailments-description').fitText(2.2);
+	// 	jQuery('#contact-description').fitText(2);
+	// }
 }
 
 function slider() {

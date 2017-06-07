@@ -1,19 +1,17 @@
 <?php snippet('header') ?>
-    <div id='title'>Contact</div>
+    <!-- <div id='title'>Contact</div> -->
     <div id='contact-wrap'>
+        <div id='contact-description'>
+            <p><?php echo $page->contactdescription() ?></p>
+        </div>
         <div id='contacts'>
             <div id='email' class=contact>
-                <div class='title'>email</div>
                 <a href="mailto:<?= $page->email() ?>"><?= $page->email() ?></a>
             </div>
 
             <div id='phone' class=contact>
-                <div class='title'>phone</div>
                 <a href="tel:<?= $page->phone() ?>"><?= $page->phone() ?></a>
             </div>
-        </div>
-        <div id='contact-description'>
-            <p><?php echo $page->contactdescription() ?></p>
         </div>
     </div>
     <div id='locations'>
@@ -22,6 +20,7 @@
             $src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAE64xZLlf3WfbwBTIEsSjwYjHltLCZWU &q=";
         ?>
             <div class='location'>
+                <div class='location-title'><?php echo $location->name() ?></div>
                 <iframe
                     scrollwheel="false"
                     zoom="false"
@@ -29,8 +28,6 @@
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAE64xZLlf3WfbwBTIEsSjwYjHltLCZWU
                 &q=<?php echo $address; ?>" allowfullscreen>
                 </iframe>
-                <div class='location-title'><?php echo $location->name() ?></div>
-                <div class='adress'><?php echo $location->address() ?></div>
             </div>
         <?php endforeach; ?>        
     </div>

@@ -1,6 +1,7 @@
 <?php snippet('header') ?>
-	<div id='title'>Forms</div>
-	<?php foreach($page->forms()->toStructure() as $form): ?>
+	<!-- <div id='title'>Forms</div> -->
+	<div id='forms-container'>
+		<?php foreach($page->forms()->toStructure() as $form): ?>
 		<div class='form'>
 			<div class='form-inner'>
 				<a href="<?php echo $form->pdffile()->toFile()->url() ?>" target='blank' class='icon'  style="border: none;">
@@ -11,5 +12,6 @@
 			</div>
 		</div>
 	<?php endforeach ?>
+	</div>
 
 <?php snippet('footer') ?>

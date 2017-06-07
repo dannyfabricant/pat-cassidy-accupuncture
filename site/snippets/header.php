@@ -10,7 +10,7 @@
     <meta name="description" content="<?= $site->description()->html() ?>">
 
     <?= css('assets/css/style.css') ?>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:400,700|Varela+Round|PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Slabo+27px" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <?= js('assets/js/jquery.fittext.js') ?>
@@ -28,5 +28,5 @@
         </div>
     </header>
 
-  <main id='<?php echo $page->title() ?>' class="main" role="main">
+  <main id='<?php echo $page->title() ?>' class="main <?php if($page->isHomePage() == false){echo 'top-space';} ?>" role="main">
 

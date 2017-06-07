@@ -5,14 +5,6 @@ Description: Services
 Services: 
 
 - 
-  service: Acupuncture
-  description: >
-    Pat was trained in Traditional Chinese
-    Medicine and went on to study various
-    other techniques, such as Korean Hand
-    Acupuncture, Richard Tan’s style and
-    abdominal acupuncture.
-- 
   service: Herbal Therapy
   description: >
     Herbal therapy is used to enhance
@@ -21,6 +13,14 @@ Services:
     Mentorship Program in herbal therapy and
     incorporates herbal treatment when
     appropriate.
+- 
+  service: Acupuncture
+  description: >
+    Pat was trained in Traditional Chinese
+    Medicine and went on to study various
+    other techniques, such as Korean Hand
+    Acupuncture, Richard Tan’s style and
+    abdominal acupuncture.
 - 
   service: Manual Therapy
   description: 'Currently enrolled in the Osteopathic College of Ontario’s training program, Pat uses cranial-sacral work and other forms of manual therapy  to address structural problems and create overall balance for the patient.'

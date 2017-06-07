@@ -1,7 +1,6 @@
 <?php snippet('header') ?>
-
+	<!-- <div id='title'>Services</div> -->
 	<div id='services-container'>
-			<div id='title'>Services</div>
 			<?php  foreach($page->services()->toStructure() as $service): ?>
 			<div class='service'>
 				<div class='title'><?php echo $service->service(); ?></div>
@@ -16,17 +15,24 @@
 		<div class='bowl-image'>
 			<img src="<?php echo kirby()->urls()->assets() . '/images/bowl-1.svg' ?>">	
 		</div>
-		<div id='ailments-description' class='large-text'><?php echo $page->ailment_description(); ?></div>
-		<div class='bowl-image'>
-			<img src="<?php echo kirby()->urls()->assets() . '/images/bowl-2.svg' ?>">	
-		</div>
-		<div id='ailments-container'>
+		<div id='ailments-description' class='large-text'>
+			<?php echo $page->ailment_description(); ?>
 			<?php foreach ($page->ailments()->toStructure() as $ailment): ?>
 				<div class='ailment'>
 					<?php echo $ailment->ailment_name(); ?>
 				</div>
 			<?php endforeach; ?>
 		</div>
+		<div class='bowl-image'>
+			<img src="<?php echo kirby()->urls()->assets() . '/images/bowl-2.svg' ?>">	
+		</div>
+		<!-- <div id='ailments-container'>
+			<?php foreach ($page->ailments()->toStructure() as $ailment): ?>
+				<div class='ailment'>
+					<?php echo $ailment->ailment_name(); ?>
+				</div>
+			<?php endforeach; ?>
+		</div> -->
 	</div>
 
 

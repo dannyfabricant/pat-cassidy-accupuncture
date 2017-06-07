@@ -1,5 +1,6 @@
 @import 'reset';
-$gentium : 'Gentium Basic', serif; 
+$serif : 'Slabo 27px', serif; 
+$san-serif : 'Roboto', helvetica, sans-serif;
 
 $aqua: #6bbaa7;
 $blue: #5088bc;
@@ -7,17 +8,17 @@ $purple: #6c648b;
 $orange: #e8561e;
 
 html, body {
-	overflow: scroll;
 	width: 100%;
 	height: auto;
 	min-width: 960px;
 }
-#title {
-	text-align: center;
-	font-family: 'Varela Round', helvetica, sans-serif;
-	font-size: 40px;
-	color: $orange;
-	margin-bottom: 25px;
+
+html {
+	overflow: scroll;
+}
+
+body {
+	overflow: auto;
 }
 
 header {
@@ -25,30 +26,35 @@ header {
 	position: fixed;
 	width: Calc(100% - 50px);
 	min-width: 960px;
-	padding: 20px 25px;
-	padding-bottom: 10px;
-	background-color: #fff;
+	height: 60px;
+	padding: 0px 25px;
+	// padding-bottom: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
 	z-index: 100;
 	#site-title {
 		float: left;
+		height: 60px;
 		a {
 			font-family: 'Roboto', helvetica, sans-serif;
 			font-size: 28px;
 			font-weight: bold;
+			line-height: 60px;
 			color: #000;
 			text-decoration: none;
 		}
 	}
 	#menu {
 		float: right;
+		height: 60px;
 		.menu-item {
 			float: left;
-			padding: 10px;
+			padding: 0 10px;
 			a {
 				font-family: 'Roboto';
 				color: #000;
 				text-decoration: none;
 				font-size: 18px;
+				line-height: 60px
 			}
 			a:hover {
 				color: $orange;
@@ -61,9 +67,12 @@ header {
 }
 
 main {
-	overflow: scroll;
-	margin-top: 73px;
-	padding-bottom: 50px;
+	overflow: hidden;
+	padding-top: 60px;
+	// padding-bottom: 50px;
+}
+main.top-space {
+	padding-top: 100px
 }
 
 #home {
@@ -71,8 +80,9 @@ main {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		height: 400px;
+		height: 450px;
 		border-bottom: 4px solid $aqua;
+		margin-bottom: 100px;
 		.slider-image{
 			width: 100%;
 			height: 100%;
@@ -92,7 +102,7 @@ main {
 				height: auto;
 				margin-top: -50%;
 				transform: translateY(50%);
-				opacity: 0.8;
+				opacity: 0.6;
 			}
 		}
 		.slider-image.fadeout {
@@ -127,32 +137,74 @@ main {
 				height: 15px;
 			}
 		}
-	}
-	#home-description {
-		position: absolute;
-		width: Calc(50% - 50px);
-		left: 25%;
-		top: 50%;
-		transform: translateY(-50%);
-		padding: 25px;
-		font-size: 21px;
-		z-index: 10;
-		background-color: rgba(255, 255, 255, 0.8);
-		p {
-			line-height: normal;
-			font-family: $gentium;
-			margin-bottom: 25px;
+		#slider-tagline {
+			position: absolute;
+			z-index: 10;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			text-align: center;
+			vertical-align: middle;
+			opacity: 0.7;
+			font-family: $san-serif;
+			font-weight: 700;
+			span {
+				line-height: 450px;
+				color: $orange;
+			}
+			.circle {
+				display: inline-block;
+				border-radius: 100px;
+				transform:translateY(-50%);
+				margin: 0 15px;
+				height: 20px;
+				width: 20px;
+				background-color: $orange;
+			}
 		}
-		a {
-			font-family: 'Roboto', helvetica, sans-serif;
-			color: $orange;
+	}
+	#home-intro {
+		position: relative;
+		overflow: hidden;
+		width: 900px;
+		margin: 0 auto;
+		margin-bottom: 75px;
+		#home-intro-description {
+			width: 500px;
+			float: left;
+			margin-right: 75px;
+			p {
+				font-family: 'Roboto', helvetica, sans-serif;
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 48px;
+				margin-bottom: 25px;
+			}
+		}
+		#home-intro-contact {
+			width: 325px;
+			padding-top: 10px;
+			float: left;
+			a {
+				display: inline-block;
+				padding: 6px 10px;
+				font-family: 'Roboto', helvetica, sans-serif;
+				font-size: 21px;
+				color: #000;
+				background-color: $aqua;
+			}
+			a:first-of-type {
+				margin-bottom: 24px;
+			}
 		}
 	}
 	#locations {
 		float: left;
 		width: Calc(100% - 50px);
-		padding: 25px;
+		padding: 100px 25px;
 		overflow: hidden;
+		background-color: $aqua;
+		padding-bottom: 100px;
 		.location {
 			float: left;
 			width: Calc(50% - 13px);
@@ -160,18 +212,19 @@ main {
 			margin-right: 25px;
 			text-align: center;
 			iframe {
-				width: 100%;
-				height: 250px;
+				width: 450px;
+				height: 350px;
+				margin: 0 auto;
 			}
 			.location-title {
 				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 18px;
-				font-weight: bold;
-				margin-bottom: 10px;
-				color: $aqua;
+				font-size: 36px;
+				font-weight: 400;
+				margin-bottom: 36px;
+				color: #000;
 			}
 			.address {
-				font-family: $gentium;
+				font-family: $serif;
 				font-size: 18px;
 				margin-bottom: 25px;
 			}
@@ -183,40 +236,32 @@ main {
 }
 
 #About {
-	#about-graphic {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 40%;
-		height: Calc(100% - 76px);
-		img {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			left: 25%;
-			width: 50%;
-			height: auto;
-		}
-	}
+	padding-bottom: 100px;
 	#about-text {
-		float: right;
-		width: Calc(60% - 25px);
+		width: 650px;
+		margin: 0 auto;
 		padding-top: 50px;
-		padding-right: 25px;
-		// font-size: 28px;
-		#about-title {
-			width: 95%;
-			margin: 0 auto;
-			margin-bottom: 25px;
-			font-family: 'Varela Round', helvetica, sans-serif;
-			font-size: 40px;
-			color: $orange;
+		#about-graphic {
+			position: relative;
+			float: left;
+			width: 175px;
+			height: auto;
+			padding-bottom: 5px;
+			padding-right: 20px;
+			img {
+				width: 300px;
+				height: auto;
+				transform: translateX(-150px);
+			}
 		}
 		p {
-			width: 95%;
+			width: 650px;
 			margin: 0 auto;
-			margin-bottom: 25px;
-			line-height: normal;
+			margin-bottom: 36px;
+			font-family: $serif;
+			font-size: 21px;
+			line-height: 42px;
+			letter-spacing: 0px;
 		}
 	}
 }
@@ -227,21 +272,23 @@ main {
 		position: relative;
 		width: 100%;
 		margin-top: 50px;
-		margin-bottom: 25px;
+		margin-bottom: 100px;
 		.service {
 			float: left;
 			width: Calc(33% - 50px);
 			padding: 25px;
 			.title {
-				margin-bottom: 10px;
+				margin-bottom: 24px;
 				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 21px;
+				font-size: 32px;
 				font-weight: bold;
 				color: $aqua;
 			}
 			.description {
-				font-family: $gentium;
-				font-size: 21px;
+				font-family: $serif;
+				font-size: 18px;
+				line-height: 32px;
+				color: #000;
 			}
 		}
 	}
@@ -250,7 +297,7 @@ main {
 		position: relative;
 		width: 100%;
 		height: 300px;
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 		border-bottom: 4px solid $orange;
 		background-repeat: no-repeat;
 	    background-size: cover;
@@ -260,10 +307,10 @@ main {
 	#ailments {
 		position: relative;
 		padding: 25px;
-		width: 100%;
+		width: Calc(100% - 50px);
 		.bowl-image {
 			float: left;
-			width: 30%;
+			width: 20%;
 			text-align: center;
 			img {
 				display: inline-block;
@@ -275,23 +322,35 @@ main {
 		}
 		#ailments-description {
 			float: left;
-			width: 40%;
-			margin-bottom: 50px;
+			width: 60%;
+			margin-bottom: 100px;
 			font-family: 'Roboto', helvetica, sans-serif;
-			font-weight: bold;
-			text-align: center;
-			line-height: normal;
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 48px;
+			.ailment {
+				display: inline-block;
+				margin-bottom: 10px;
+				transform: translateY(-5px);
+				padding: 0px 10px;
+				border-radius: 20px;
+				font-size: 12px;
+				line-height: 36px;
+				background-color: $aqua;
+				color: #fff;
+			}
 		}
 		#ailments-container {
-			width: 50%;
+			width: 800px;
 			margin: 0 auto;
 			text-align: center;
 			.ailment {
 				display: inline-block;
 				padding: 10px;
-				margin: 12px 12px;
+				margin: 24px 24px;
 				border-radius: 50px;
 				font-family: 'Roboto', helvetica, sans-serif;
+				font-size: 18px;
 				background-color: $aqua;
 				color: #000;
 			}
@@ -300,85 +359,105 @@ main {
 }
 
 #contact {
-	padding-bottom: 50px;
+	text-align: center;
 	#contact-wrap {
 		width: 100%;
 		margin-top: 50px;
+		margin-bottom: 100px;
 		#contacts {
-			float: left;
+			display: inline-block;
 			overflow: hidden;
-			width: Calc(50% - 25px);
-			padding-left: 25px;
-			padding-top: 25px;
+			width: 300px;
+			padding-top: 15px;
+			padding-bottom: 5px;
+			margin: 0 auto;
+			margin-bottom: 100px;
+			text-align: left;
 			.contact {
+				width: 225px;
 				float: left;
 				.title {
 					font-family: 'Roboto', helvetica, sans-serif;
 					font-size: 21px;
-					font-weight: bold;
+					font-weight: 400;
 					color: $aqua;
 					margin-bottom: 10px;
 				}
 				a {
+					padding: 6px 10px;
 					font-family: 'Roboto', helvetica, sans-serif;
 					font-size: 21px;
 					color: #000;
+					background-color: $aqua;
 				}
 			}
 			.contact:first-of-type {
-				margin-right: 25px;
+				margin: 25px 0;
 			}
 		}
 		#contact-description {
-			float: left;
+			vertical-align: top;
+			display: inline-block;
 			overflow: hidden;
-			width: Calc(50% - 50px);
+			width: 500px;
+			margin: 0 auto;
 			padding: 25px;
+			text-align: left;
 			p {
 				float: left;
 				width: 80%;
+				font-family: 'Roboto', helvetica, sans-serif;
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 48px;
+				margin-bottom: 25px;
+
 			}
 		}
 	}
 	#locations {
-		overflow: hidden;
+		float: left;
 		width: Calc(100% - 50px);
-		padding: 25px;
+		padding: 100px 25px;
+		overflow: hidden;
+		background-color: $aqua;
+		padding-bottom: 100px;
 		.location {
 			float: left;
-			width: Calc(50% - 25px);
+			width: Calc(50% - 13px);
+			margin-top: 25px;
+			margin-right: 25px;
+			text-align: center;
 			iframe {
-				width: 100%;
-				height: 250px;
+				width: 450px;
+				height: 350px;
+				margin: 0 auto;
 			}
 			.location-title {
 				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 18px;
-				font-weight: bold;
-				margin-bottom: 10px;
-				color: $aqua;
+				font-size: 36px;
+				font-weight: 400;
+				margin-bottom: 36px;
+				color: #000;
 			}
 			.address {
-				font-family: $gentium;
+				font-family: $serif;
 				font-size: 18px;
+				margin-bottom: 25px;
 			}
 		}
-		.location:first-of-type {
-			margin-right: 25px;
-		}
 		.location:last-of-type {
-			padding-left: 25px;
+			margin-right: 0px;
 		}
 	}
 }
 
-#forms {
+#forms-container {
 	width: 100%;
-	padding-top: 50px;
 	.form {
 		float: left;
-		width: 33%;
-		margin: 50px 0;
+		width: Calc(33% - 50px);
+		padding: 25px;
 		text-align: center;
 		.form-inner {
 			display: inline-block;
@@ -393,15 +472,18 @@ main {
 				}
 			}
 			.title {
-				color: $aqua;
+				margin-bottom: 24px;
 				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 18px;
+				font-size: 32px;
+				font-weight: bold;
+				color: $aqua;
 			}
 			.description {
-				padding-top: 10px;
-				width: 250px;
-				font-family: $gentium;
+				clear: both;
+				font-family: $serif;
 				font-size: 18px;
+				line-height: 32px;
+				color: #000;
 			}
 		}
 	}
