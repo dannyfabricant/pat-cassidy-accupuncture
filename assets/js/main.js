@@ -16,7 +16,7 @@ $(document).ready( function () {
 });
 
 function sizeText() {
-	$('#slider-tagline').fitText(1.4);
+	$('#slider-tagline').fitText(1.6);
 	// if(window.outerWidth <= 736) {
 	// 	jQuery('#home-description').fitText(1.2);
 	// 	// jQuery('#about-text').fitText(1.6);

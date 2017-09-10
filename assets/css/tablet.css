@@ -1,0 +1,125 @@
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+  /* line 2, ../sass/tablet.scss */
+  html, body, header {
+    min-width: 0px;
+  }
+
+  /* line 6, ../sass/tablet.scss */
+  #home {
+    min-width: 0px;
+  }
+  /* line 8, ../sass/tablet.scss */
+  #home #home-intro {
+    min-width: 0px;
+  }
+  /* line 10, ../sass/tablet.scss */
+  #home #home-intro #home-intro-description {
+    width: 340px;
+  }
+  /* line 14, ../sass/tablet.scss */
+  #home #locations {
+    padding-top: 50px;
+  }
+  /* line 16, ../sass/tablet.scss */
+  #home #locations .location {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+  /* line 20, ../sass/tablet.scss */
+  #home #locations .location iframe {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* line 29, ../sass/tablet.scss */
+  #About #about-text {
+    float: none;
+    width: Calc(100% - 50px);
+    padding-right: 0;
+    padding: 0 25px;
+    padding-top: 0px;
+  }
+  /* line 35, ../sass/tablet.scss */
+  #About #about-text #about-graphic {
+    position: relative;
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    height: 200px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  /* line 43, ../sass/tablet.scss */
+  #About #about-text #about-graphic img {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    width: 150px;
+    height: auto;
+    transform: none;
+  }
+  /* line 52, ../sass/tablet.scss */
+  #About #about-text p {
+    width: 600px;
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  /* line 61, ../sass/tablet.scss */
+  #contact #contact-wrap {
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  /* line 64, ../sass/tablet.scss */
+  #contact #contact-wrap #contacts {
+    float: none;
+  }
+  /* line 66, ../sass/tablet.scss */
+  #contact #contact-wrap #contacts .contact {
+    margin-bottom: 25px;
+    float: none;
+  }
+  /* line 70, ../sass/tablet.scss */
+  #contact #contact-wrap #contacts .contact:first-of-type {
+    margin-right: 0px;
+  }
+  /* line 74, ../sass/tablet.scss */
+  #contact #contact-wrap #contact-description {
+    width: 340px;
+    margin-right: 50px;
+  }
+  /* line 80, ../sass/tablet.scss */
+  #contact #locations {
+    padding-top: 50px;
+  }
+  /* line 82, ../sass/tablet.scss */
+  #contact #locations .location {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+  /* line 86, ../sass/tablet.scss */
+  #contact #locations .location iframe {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* line 94, ../sass/tablet.scss */
+  #forms {
+    padding-top: 200px;
+    width: Calc(100% - 50px);
+    margin-left: 25px;
+  }
+  /* line 98, ../sass/tablet.scss */
+  #forms .form {
+    width: 50%;
+    float: left;
+    margin-bottom: 75px;
+    padding: 0px;
+  }
+  /* line 104, ../sass/tablet.scss */
+  #forms .form .form-inner .title {
+    font-size: 24px;
+  }
+}

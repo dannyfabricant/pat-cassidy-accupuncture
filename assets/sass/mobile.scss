@@ -1,37 +1,49 @@
-@media only screen and (max-device-width: 736px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	html, body, header {
 		min-width: 0px;
 	}
 
 	header {
+		height: auto;
+		width: 100%;
+		padding: 0;
 		#site-title {
 			float: none;
 			width: 100%;
 			text-align: center;
+			a {
+				font-size: 26px;
+			}
 		}
 		#menu {
+			// margin-top: -1px;
 			overflow: hidden;
 			float: none;
 			width: 100%;
 			text-align: center;
-			background-color: #fff;
+			height: 30px;
 			.menu-item {
 				float: none;
 				display: inline-block;
 				a {
 					font-size: 12px;
+					line-height: 30px;
 				}
 			}
 		}
 	}
 	main {
 		margin-top: 94px;
-		padding-bottom: 25px;
+		// padding-bottom: 25px;
+	}
+	main.top-space {
+		padding-top: 50px;
 	}
 
 	#home {
 		#slider-wrapper {
 			height: 300px;
+			margin-bottom: 50px;
 			.slider-image {
 				img {
 					min-width: 500px;
@@ -39,20 +51,40 @@
 					transform: translateY(-50%);
 				}
 			}
+			#slider-tagline {
+				display: none;
+			}
 		}
-		#home-description {
-			width: Calc(80% - 50px);
-			left: 10%;
+		#home-intro {
+			width: Calc(100% - 50px);
+			min-width: auto;
+			left: 0;
 			font-size: 21px;
-			a {
-				font-size: 18px;
+			#home-intro-description {
+				width: 100%;
+				margin-right: 0px;
+				p {
+					font-size: 18px;
+					line-height: 38px;
+				}
+			}
+			#home-intro-contact {
+				display: block;
+				a span {
+					padding-left: 0px;
+				}
 			}
 		}
 		#locations {
+			width: 100%;
+			padding: 100px 0px;
+			padding-top: 50px;
 			.location {
 				width: 100%;
+				margin-right: 0px;
 				margin-bottom: 25px;
 				iframe {
+					width: 100%;
 					margin-bottom: 10px;
 				}
 			}
@@ -60,43 +92,55 @@
 	}
 
 	#About {
-		#about-graphic {
-			position: relative;
-			overflow: hidden;
-			float: none;
-			width: 100%;
-			height: 200px;
-			text-align: center;
-			img {
-				position: relative;
-				display: inline-block;
-				left: 0;
-				width: 150px;
-				height: auto;
-			}
-		}
 		#about-text {
 			float: none;
-			width: 100%;
+			width: Calc(100% - 50px);
 			padding-right: 0;
-			#about-title {
+			padding: 0 25px;
+			padding-top: 0px;
+			#about-graphic {
+				position: relative;
+				overflow: hidden;
+				float: none;
+				width: 100%;
+				height: 200px;
+				padding-right: 0px;
 				text-align: center;
+				img {
+					position: relative;
+					display: inline-block;
+					left: 0;
+					width: 150px;
+					height: auto;
+					transform: none;
+				}
+			}
+			p {
+				width: 100%;
+				font-size: 18px;
+				line-height: 38px;
 			}
 		}
 	}
 
 	#Services {
 		#services-container {
+			width: Calc(100% - 50px);
+			margin-top: 0px;
+			margin-left: 25px;
 			.service {
 				float: none;
-				width: Calc(100% - 20px);
-				padding: 25px 10px;
+				width: 100%;
+				padding: 0px;
+				margin: 0px !important;
+				margin-bottom: 50px !important;
 				text-align: center;
 			}
 		}
 		#ailments {
-			width: Calc(100% - 20px);
-			padding: 25px 10px;
+			overflow: hidden;
+			width: Calc(100% - 50px);
+			padding: 25px;
 			.bowl-image {
 				float: none;
 				width: 100%;
@@ -105,15 +149,18 @@
 			}
 			#ailments-description {
 				width: 100%;
+				font-size: 24px;
+				text-align: center;
+				.ailment {
+					font-size: 18px;
+					display: block;
+				}
+				.ailment:first-of-type {
+					margin-top: 25px;
+				}
 			}
 			.bowl-image:first-of-type {
 				display: block;
-			}
-			#ailments-container {
-				width: 100%;
-				.ailment {
-					font-size: 21px;
-				}
 			}
 		}
 	}
@@ -121,47 +168,63 @@
 	#contact {
 		#contact-wrap {
 			overflow: hidden;
+			margin-top: 0px;
+			margin-bottom: 0px;
 			#contacts {
 				float: none;
-				width: Calc(100% - 20px);
-				padding: 25px 10px;
-				text-align: center;
+				width: Calc(100% - 50px);
+				margin-bottom: 50px;
+				padding: 25px;
+				text-align: left;
 				.contact {
 					margin-bottom: 25px;
 					float: none;
+					a {
+						padding-left: 0px;
+					}
 				}
 				.contact:first-of-type {
 					margin-right: 0px;
 				}
 			}
 			#contact-description {
-				width: Calc(100% - 20px);
-				padding: 25px 10px;
-				text-align: center;
+				width: Calc(100% - 50px);
+				padding: 0px 25px;
+				text-align: left;
 				p {
 					width: 100%;
 				}
 			}
 		}
 		#locations {
+			width: 100%;
+			padding: 100px 0px;
+			padding-top: 50px;
 			.location {
 				width: 100%;
+				margin-right: 0px;
 				margin-bottom: 25px;
 				iframe {
+					width: 100%;
 					margin-bottom: 10px;
 				}
-			}
-			.location:last-of-type {
-				padding-left: 0px;
-				margin-top: 50px;
 			}
 		}
 	}
 
 	#forms {
+		width: Calc(100% - 50px);
+		margin-left: 25px;
 		.form {
 			width: 100%;
 			float: none;
+			margin-bottom: 75px;
+			padding: 0px;
+			.form-inner {
+				.title {
+					font-size: 24px;
+				}
+			}
 		}
 	}
 }

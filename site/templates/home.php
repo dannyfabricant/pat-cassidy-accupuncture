@@ -27,8 +27,8 @@
 			<?php echo $page->email_info()->kirbytext() ?>
 		</div>
 		<div id='home-intro-contact'>
-			<a href="@mailto:<?php echo $page->email() ?>"><?php echo $page->email() ?></a>
-			<a href="tel:1-[917]-202-7418">1-[917]-202-7418</a>
+			<a href="@mailto:<?php echo $page->email() ?>"><span><?php echo $page->email() ?></span></a>
+			<a href="tel:1-[917]-202-7418"><span>1-[917]-202-7418</span></a>
 		</div>
 	</div>
 	<div id='locations'>

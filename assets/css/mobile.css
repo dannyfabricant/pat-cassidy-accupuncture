@@ -1,181 +1,263 @@
-@media only screen and (max-device-width: 736px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* line 2, ../sass/mobile.scss */
   html, body, header {
     min-width: 0px;
   }
 
-  /* line 7, ../sass/mobile.scss */
+  /* line 6, ../sass/mobile.scss */
+  header {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  /* line 10, ../sass/mobile.scss */
   header #site-title {
     float: none;
     width: 100%;
     text-align: center;
   }
-  /* line 12, ../sass/mobile.scss */
+  /* line 14, ../sass/mobile.scss */
+  header #site-title a {
+    font-size: 26px;
+  }
+  /* line 18, ../sass/mobile.scss */
   header #menu {
     overflow: hidden;
     float: none;
     width: 100%;
     text-align: center;
-    background-color: #fff;
+    height: 30px;
   }
-  /* line 18, ../sass/mobile.scss */
+  /* line 25, ../sass/mobile.scss */
   header #menu .menu-item {
     float: none;
     display: inline-block;
   }
-  /* line 21, ../sass/mobile.scss */
+  /* line 28, ../sass/mobile.scss */
   header #menu .menu-item a {
     font-size: 12px;
+    line-height: 30px;
   }
 
-  /* line 27, ../sass/mobile.scss */
+  /* line 35, ../sass/mobile.scss */
   main {
     margin-top: 94px;
-    padding-bottom: 25px;
   }
 
-  /* line 33, ../sass/mobile.scss */
+  /* line 39, ../sass/mobile.scss */
+  main.top-space {
+    padding-top: 50px;
+  }
+
+  /* line 44, ../sass/mobile.scss */
   #home #slider-wrapper {
     height: 300px;
+    margin-bottom: 50px;
   }
-  /* line 36, ../sass/mobile.scss */
+  /* line 48, ../sass/mobile.scss */
   #home #slider-wrapper .slider-image img {
     min-width: 500px;
     margin-top: 50%;
     transform: translateY(-50%);
   }
-  /* line 43, ../sass/mobile.scss */
-  #home #home-description {
-    width: Calc(80% - 50px);
-    left: 10%;
+  /* line 54, ../sass/mobile.scss */
+  #home #slider-wrapper #slider-tagline {
+    display: none;
+  }
+  /* line 58, ../sass/mobile.scss */
+  #home #home-intro {
+    width: Calc(100% - 50px);
+    min-width: auto;
+    left: 0;
     font-size: 21px;
   }
-  /* line 47, ../sass/mobile.scss */
-  #home #home-description a {
-    font-size: 18px;
+  /* line 63, ../sass/mobile.scss */
+  #home #home-intro #home-intro-description {
+    width: 100%;
+    margin-right: 0px;
   }
-  /* line 52, ../sass/mobile.scss */
+  /* line 66, ../sass/mobile.scss */
+  #home #home-intro #home-intro-description p {
+    font-size: 18px;
+    line-height: 38px;
+  }
+  /* line 71, ../sass/mobile.scss */
+  #home #home-intro #home-intro-contact {
+    display: block;
+  }
+  /* line 73, ../sass/mobile.scss */
+  #home #home-intro #home-intro-contact a span {
+    padding-left: 0px;
+  }
+  /* line 78, ../sass/mobile.scss */
+  #home #locations {
+    width: 100%;
+    padding: 100px 0px;
+    padding-top: 50px;
+  }
+  /* line 82, ../sass/mobile.scss */
   #home #locations .location {
     width: 100%;
+    margin-right: 0px;
     margin-bottom: 25px;
   }
-  /* line 55, ../sass/mobile.scss */
+  /* line 86, ../sass/mobile.scss */
   #home #locations .location iframe {
+    width: 100%;
     margin-bottom: 10px;
   }
 
-  /* line 63, ../sass/mobile.scss */
-  #About #about-graphic {
+  /* line 95, ../sass/mobile.scss */
+  #About #about-text {
+    float: none;
+    width: Calc(100% - 50px);
+    padding-right: 0;
+    padding: 0 25px;
+    padding-top: 0px;
+  }
+  /* line 101, ../sass/mobile.scss */
+  #About #about-text #about-graphic {
     position: relative;
     overflow: hidden;
     float: none;
     width: 100%;
     height: 200px;
+    padding-right: 0px;
     text-align: center;
   }
-  /* line 70, ../sass/mobile.scss */
-  #About #about-graphic img {
+  /* line 109, ../sass/mobile.scss */
+  #About #about-text #about-graphic img {
     position: relative;
     display: inline-block;
     left: 0;
     width: 150px;
     height: auto;
+    transform: none;
   }
-  /* line 78, ../sass/mobile.scss */
-  #About #about-text {
-    float: none;
+  /* line 118, ../sass/mobile.scss */
+  #About #about-text p {
     width: 100%;
-    padding-right: 0;
-  }
-  /* line 82, ../sass/mobile.scss */
-  #About #about-text #about-title {
-    text-align: center;
+    font-size: 18px;
+    line-height: 38px;
   }
 
-  /* line 90, ../sass/mobile.scss */
+  /* line 127, ../sass/mobile.scss */
+  #Services #services-container {
+    width: Calc(100% - 50px);
+    margin-top: 0px;
+    margin-left: 25px;
+  }
+  /* line 131, ../sass/mobile.scss */
   #Services #services-container .service {
     float: none;
-    width: Calc(100% - 20px);
-    padding: 25px 10px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px !important;
+    margin-bottom: 50px !important;
     text-align: center;
   }
-  /* line 97, ../sass/mobile.scss */
+  /* line 140, ../sass/mobile.scss */
   #Services #ailments {
-    width: Calc(100% - 20px);
-    padding: 25px 10px;
+    overflow: hidden;
+    width: Calc(100% - 50px);
+    padding: 25px;
   }
-  /* line 100, ../sass/mobile.scss */
+  /* line 144, ../sass/mobile.scss */
   #Services #ailments .bowl-image {
     float: none;
     width: 100%;
     height: 100px;
     display: none;
   }
-  /* line 106, ../sass/mobile.scss */
+  /* line 150, ../sass/mobile.scss */
   #Services #ailments #ailments-description {
     width: 100%;
+    font-size: 24px;
+    text-align: center;
   }
-  /* line 109, ../sass/mobile.scss */
+  /* line 154, ../sass/mobile.scss */
+  #Services #ailments #ailments-description .ailment {
+    font-size: 18px;
+    display: block;
+  }
+  /* line 158, ../sass/mobile.scss */
+  #Services #ailments #ailments-description .ailment:first-of-type {
+    margin-top: 25px;
+  }
+  /* line 162, ../sass/mobile.scss */
   #Services #ailments .bowl-image:first-of-type {
     display: block;
   }
-  /* line 112, ../sass/mobile.scss */
-  #Services #ailments #ailments-container {
-    width: 100%;
-  }
-  /* line 114, ../sass/mobile.scss */
-  #Services #ailments #ailments-container .ailment {
-    font-size: 21px;
-  }
 
-  /* line 122, ../sass/mobile.scss */
+  /* line 169, ../sass/mobile.scss */
   #contact #contact-wrap {
     overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
-  /* line 124, ../sass/mobile.scss */
+  /* line 173, ../sass/mobile.scss */
   #contact #contact-wrap #contacts {
     float: none;
-    width: Calc(100% - 20px);
-    padding: 25px 10px;
-    text-align: center;
+    width: Calc(100% - 50px);
+    margin-bottom: 50px;
+    padding: 25px;
+    text-align: left;
   }
-  /* line 129, ../sass/mobile.scss */
+  /* line 179, ../sass/mobile.scss */
   #contact #contact-wrap #contacts .contact {
     margin-bottom: 25px;
     float: none;
   }
-  /* line 133, ../sass/mobile.scss */
+  /* line 182, ../sass/mobile.scss */
+  #contact #contact-wrap #contacts .contact a {
+    padding-left: 0px;
+  }
+  /* line 186, ../sass/mobile.scss */
   #contact #contact-wrap #contacts .contact:first-of-type {
     margin-right: 0px;
   }
-  /* line 137, ../sass/mobile.scss */
+  /* line 190, ../sass/mobile.scss */
   #contact #contact-wrap #contact-description {
-    width: Calc(100% - 20px);
-    padding: 25px 10px;
-    text-align: center;
+    width: Calc(100% - 50px);
+    padding: 0px 25px;
+    text-align: left;
   }
-  /* line 141, ../sass/mobile.scss */
+  /* line 194, ../sass/mobile.scss */
   #contact #contact-wrap #contact-description p {
     width: 100%;
   }
-  /* line 147, ../sass/mobile.scss */
+  /* line 199, ../sass/mobile.scss */
+  #contact #locations {
+    width: 100%;
+    padding: 100px 0px;
+    padding-top: 50px;
+  }
+  /* line 203, ../sass/mobile.scss */
   #contact #locations .location {
     width: 100%;
+    margin-right: 0px;
     margin-bottom: 25px;
   }
-  /* line 150, ../sass/mobile.scss */
+  /* line 207, ../sass/mobile.scss */
   #contact #locations .location iframe {
+    width: 100%;
     margin-bottom: 10px;
   }
-  /* line 154, ../sass/mobile.scss */
-  #contact #locations .location:last-of-type {
-    padding-left: 0px;
-    margin-top: 50px;
-  }
 
-  /* line 162, ../sass/mobile.scss */
+  /* line 215, ../sass/mobile.scss */
+  #forms {
+    width: Calc(100% - 50px);
+    margin-left: 25px;
+  }
+  /* line 218, ../sass/mobile.scss */
   #forms .form {
     width: 100%;
     float: none;
+    margin-bottom: 75px;
+    padding: 0px;
+  }
+  /* line 224, ../sass/mobile.scss */
+  #forms .form .form-inner .title {
+    font-size: 24px;
   }
 }

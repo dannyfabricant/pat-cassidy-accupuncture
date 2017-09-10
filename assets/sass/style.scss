@@ -1,10 +1,11 @@
 @import 'reset';
 $serif : 'Slabo 27px', serif; 
 $san-serif : 'Roboto', helvetica, sans-serif;
+$display : 'Poiret One', cursive;
 
 $aqua: #6bbaa7;
 $blue: #5088bc;
-$purple: #6c648b;
+$purple: #8688f5;
 $orange: #e8561e;
 
 html, body {
@@ -22,10 +23,8 @@ body {
 }
 
 header {
-	overflow: hidden;
 	position: fixed;
 	width: Calc(100% - 50px);
-	min-width: 960px;
 	height: 60px;
 	padding: 0px 25px;
 	// padding-bottom: 10px;
@@ -35,8 +34,9 @@ header {
 		float: left;
 		height: 60px;
 		a {
-			font-family: 'Roboto', helvetica, sans-serif;
-			font-size: 28px;
+			font-family: $display;
+			font-size: 32px;
+			letter-spacing: 2px;
 			font-weight: bold;
 			line-height: 60px;
 			color: #000;
@@ -50,9 +50,10 @@ header {
 			float: left;
 			padding: 0 10px;
 			a {
-				font-family: 'Roboto';
+				font-family: $san-serif;
 				color: #000;
 				text-decoration: none;
+				font-weight: 300;
 				font-size: 18px;
 				line-height: 60px
 			}
@@ -81,7 +82,7 @@ main.top-space {
 		overflow: hidden;
 		width: 100%;
 		height: 450px;
-		border-bottom: 4px solid $aqua;
+		border-bottom: 4px solid $purple;
 		margin-bottom: 100px;
 		.slider-image{
 			width: 100%;
@@ -122,7 +123,7 @@ main.top-space {
 			bottom: 10px;
 			left: 50%;
 			transform: translateX(-50%);
-			z-index: 5;
+			z-index: 12;
 			.slider-nav-button {
 				float: left;
 				width: 10px;
@@ -166,32 +167,39 @@ main.top-space {
 	#home-intro {
 		position: relative;
 		overflow: hidden;
-		width: 900px;
+		width: 100%;
+		min-width: 960px;
 		margin: 0 auto;
 		margin-bottom: 75px;
+		text-align: center;
 		#home-intro-description {
+			display: inline-block;
 			width: 500px;
-			float: left;
-			margin-right: 75px;
+			margin-right: 10%;
+			text-align: left;
 			p {
 				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 32px;
+				font-size: 24px;
 				font-weight: 500;
 				line-height: 48px;
 				margin-bottom: 25px;
 			}
 		}
 		#home-intro-contact {
-			width: 325px;
+			display: inline-block;
+			vertical-align: top;
 			padding-top: 10px;
-			float: left;
+			text-align: left;
 			a {
-				display: inline-block;
-				padding: 6px 10px;
-				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 21px;
-				color: #000;
-				background-color: $aqua;
+				display: block;
+				span {
+					display: inline-block;
+					font-family: 'Roboto', helvetica, sans-serif;
+					font-size: 21px;
+					padding: 6px 10px;
+					color: $purple;
+					text-decoration: underline;
+				}
 			}
 			a:first-of-type {
 				margin-bottom: 24px;
@@ -203,7 +211,7 @@ main.top-space {
 		width: Calc(100% - 50px);
 		padding: 100px 25px;
 		overflow: hidden;
-		background-color: $aqua;
+		background-color: $purple;
 		padding-bottom: 100px;
 		.location {
 			float: left;
@@ -221,7 +229,7 @@ main.top-space {
 				font-size: 36px;
 				font-weight: 400;
 				margin-bottom: 36px;
-				color: #000;
+				color: #fff;
 			}
 			.address {
 				font-family: $serif;
@@ -267,6 +275,7 @@ main.top-space {
 }
 
 #Services {
+	padding-bottom: 100px;
 	#services-container {
 		overflow: hidden;
 		position: relative;
@@ -275,21 +284,33 @@ main.top-space {
 		margin-bottom: 100px;
 		.service {
 			float: left;
-			width: Calc(33% - 50px);
-			padding: 25px;
+			width: Calc(33%);
+			// padding: 25px;
+			margin-bottom: 75px;
 			.title {
 				margin-bottom: 24px;
 				font-family: 'Roboto', helvetica, sans-serif;
 				font-size: 32px;
 				font-weight: bold;
-				color: $aqua;
+				color: $purple;
 			}
 			.description {
 				font-family: $serif;
-				font-size: 18px;
+				font-size: 21px;
 				line-height: 32px;
 				color: #000;
 			}
+		}
+		.service:nth-of-type(even) {
+			margin-left: 16%;
+			margin-right: 8%;
+		}
+		.service:nth-of-type(odd) {
+			clear: both;
+			margin-left: 8%;
+		}
+		.service:last-of-type {
+			// margin-bottom: 0px;
 		}
 	}
 	#services-photo {
@@ -298,7 +319,7 @@ main.top-space {
 		width: 100%;
 		height: 300px;
 		margin-bottom: 100px;
-		border-bottom: 4px solid $orange;
+		border-bottom: 4px solid $purple;
 		background-repeat: no-repeat;
 	    background-size: cover;
 	    background-position: center; 
@@ -323,36 +344,23 @@ main.top-space {
 		#ailments-description {
 			float: left;
 			width: 60%;
-			margin-bottom: 100px;
+			margin-bottom: 50px;
+			text-align: center;
 			font-family: 'Roboto', helvetica, sans-serif;
 			font-size: 32px;
-			font-weight: 500;
+			font-weight: 700;
 			line-height: 48px;
 			.ailment {
 				display: inline-block;
 				margin-bottom: 10px;
-				transform: translateY(-5px);
-				padding: 0px 10px;
+				padding: 0px 5px;
 				border-radius: 20px;
-				font-size: 12px;
+				font-family: $serif;
+				font-size: 32px;
+				font-style: italic;
 				line-height: 36px;
-				background-color: $aqua;
-				color: #fff;
-			}
-		}
-		#ailments-container {
-			width: 800px;
-			margin: 0 auto;
-			text-align: center;
-			.ailment {
-				display: inline-block;
-				padding: 10px;
-				margin: 24px 24px;
-				border-radius: 50px;
-				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 18px;
-				background-color: $aqua;
-				color: #000;
+				font-weight: 300;
+				color: $purple;
 			}
 		}
 	}
@@ -380,15 +388,14 @@ main.top-space {
 					font-family: 'Roboto', helvetica, sans-serif;
 					font-size: 21px;
 					font-weight: 400;
-					color: $aqua;
+					color: $purple;
 					margin-bottom: 10px;
 				}
 				a {
 					padding: 6px 10px;
 					font-family: 'Roboto', helvetica, sans-serif;
 					font-size: 21px;
-					color: #000;
-					background-color: $aqua;
+					color: $purple;
 				}
 			}
 			.contact:first-of-type {
@@ -401,13 +408,13 @@ main.top-space {
 			overflow: hidden;
 			width: 500px;
 			margin: 0 auto;
-			padding: 25px;
+			margin-right: 100px;
+			padding: 25px 0;
 			text-align: left;
 			p {
 				float: left;
-				width: 80%;
 				font-family: 'Roboto', helvetica, sans-serif;
-				font-size: 32px;
+				font-size: 24px;
 				font-weight: 500;
 				line-height: 48px;
 				margin-bottom: 25px;
@@ -420,7 +427,7 @@ main.top-space {
 		width: Calc(100% - 50px);
 		padding: 100px 25px;
 		overflow: hidden;
-		background-color: $aqua;
+		background-color: $purple;
 		padding-bottom: 100px;
 		.location {
 			float: left;
@@ -462,31 +469,42 @@ main.top-space {
 		.form-inner {
 			display: inline-block;
 			text-align: left;
-			.icon {
-				float: left;
-				width: 50px;
-				height: auto;
-				padding-right: 10px;
-				svg {
-					fill: $aqua;
-				}
-			}
 			.title {
-				margin-bottom: 24px;
+				display: block;
+				width: 100%;
+				padding-left: 60px;
+				margin-bottom: 12px;
 				font-family: 'Roboto', helvetica, sans-serif;
 				font-size: 32px;
 				font-weight: bold;
-				color: $aqua;
+				color: #000;
+			}
+			.icon {
+				float: left;
+				width: 40px;
+				height: auto;
+				padding-top: 10px;
+				padding-right: 20px;
+				svg {
+					fill: #000;
+				}
 			}
 			.description {
-				clear: both;
+				margin-bottom: 12px;
 				font-family: $serif;
 				font-size: 18px;
 				line-height: 32px;
 				color: #000;
+			}
+			.view {
+				text-decoration: none;
+				padding-left: 60px;
+				color: $purple;
+				font-family: $san-serif;
 			}
 		}
 	}
 }
 
 @import 'mobile';
+@import 'tablet';

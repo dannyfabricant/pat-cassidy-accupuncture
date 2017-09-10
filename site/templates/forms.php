@@ -4,11 +4,12 @@
 		<?php foreach($page->forms()->toStructure() as $form): ?>
 		<div class='form'>
 			<div class='form-inner'>
-				<a href="<?php echo $form->pdffile()->toFile()->url() ?>" target='blank' class='icon'  style="border: none;">
-					<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.29 68.93"><defs><style>.cls-1,.cls-3{fill:none;}.cls-2{fill:#fff;}.cls-3{stroke:#231f20;stroke-miterlimit:10;stroke-width:0.25px;}</style></defs><line class="cls-3" x1="6.75" y1="61.79" x2="43.55" y2="61.79"/><line class="cls-3" x1="6.75" y1="56.2" x2="43.55" y2="56.2"/><line class="cls-3" x1="6.75" y1="50.61" x2="43.55" y2="50.61"/><line class="cls-3" x1="6.75" y1="45.02" x2="43.55" y2="45.02"/><line class="cls-3" x1="6.75" y1="39.43" x2="43.55" y2="39.43"/><line class="cls-3" x1="6.75" y1="33.84" x2="43.55" y2="33.84"/><line class="cls-3" x1="16.92" y1="11.48" x2="43.55" y2="11.48"/><line class="cls-3" x1="16.92" y1="17.07" x2="43.55" y2="17.07"/><line class="cls-3" x1="6.75" y1="22.66" x2="43.55" y2="22.66"/><line class="cls-3" x1="6.75" y1="28.25" x2="43.55" y2="28.25"/><line class="cls-3" x1="16.92" y1="5.89" x2="43.55" y2="5.89"/><polygon class="cls-1" points="18.07 18.07 1.23 18.07 1.23 67.7 49.07 67.7 49.07 1.23 18.07 1.23 18.07 18.07"/><polygon class="cls-2" points="16.85 2.09 2.09 16.85 16.85 16.85 16.85 2.09"/><path d="M17.21,0L0,17.21V68.93H50.29V0H17.21ZM16.85,2.09V16.85H2.09ZM49.07,67.7H1.23V18.07H18.07V1.23h31V67.7Z"/></svg>	
-				</a>
 				<a href="<?php echo $form->pdffile()->toFile()->url() ?>" target='blank' class='title'> <?php echo $form->form_name(); ?></a>
+				<a href="<?php echo $form->pdffile()->toFile()->url() ?>" target='blank' class='icon'  style="border: none;">
+					<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.29 68.93"><defs><style>.cls-1,.st0, .st1,.cls-3{fill:none;}.cls-2{fill:#fff;}.cls-3{stroke:#231f20;stroke-miterlimit:10;stroke-width:0.25px;}</style></defs><polygon class="st0" points="18.1,18.1 1.2,18.1 1.2,67.7 49.1,67.7 49.1,1.2 18.1,1.2 "/> <polygon class="st1" points="16.8,2.1 2.1,16.8 16.8,16.8 "/> <path d="M17.2,0L0,17.2v51.7h50.3V0H17.2z M16.8,2.1v14.8H2.1L16.8,2.1z M49.1,67.7H1.2V18.1H18V1.2h31L49.1,67.7L49.1,67.7z"/> <rect x="6.7" y="61.3" width="36.8" height="1"/> <rect x="6.7" y="55.7" width="36.8" height="1"/> <rect x="6.7" y="50.1" width="36.8" height="1"/> <rect x="6.7" y="44.5" width="36.8" height="1"/> <rect x="6.7" y="38.9" width="36.8" height="1"/> <rect x="6.7" y="33.3" width="36.8" height="1"/> <rect x="16.9" y="11" width="26.6" height="1"/> <rect x="16.9" y="16.6" width="26.6" height="1"/> <rect x="6.7" y="22.2" width="36.8" height="1"/> <rect x="6.7" y="27.8" width="36.8" height="1"/></svg>	
+				</a>
 				<div class='description'><?php echo $form->form_description(); ?></div>
+				<a class='view' href="<?= $form->pdffile()->toFile()->url() ?>">view form &rarr;</a>
 			</div>
 		</div>
 	<?php endforeach ?>

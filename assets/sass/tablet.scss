@@ -1,0 +1,110 @@
+@media only screen and (min-device-width : 480px) and (max-device-width : 800px) {
+	html, body, header {
+		min-width: 0px;
+	}
+
+	#home {
+		min-width: 0px;
+		#home-intro {
+			min-width: 0px;
+			#home-intro-description {
+				width: 340px;
+			}
+		}
+		#locations {
+			padding-top: 50px;
+			.location {
+				width: 100%;
+				margin-right: 0px;
+				margin-bottom: 25px;
+				iframe {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	#About {
+		#about-text {
+			float: none;
+			width: Calc(100% - 50px);
+			padding-right: 0;
+			padding: 0 25px;
+			padding-top: 0px;
+			#about-graphic {
+				position: relative;
+				overflow: hidden;
+				float: none;
+				width: 100%;
+				height: 200px;
+				padding-right: 0px;
+				text-align: center;
+				img {
+					position: relative;
+					display: inline-block;
+					left: 0;
+					width: 150px;
+					height: auto;
+					transform: none;
+				}
+			}
+			p {
+				width: 600px;
+				font-size: 18px;
+				line-height: 38px;
+			}
+		}
+	}
+
+	#contact {
+		#contact-wrap {
+			overflow: hidden;
+			margin-bottom: 50px;
+			#contacts {
+				float: none;
+				.contact {
+					margin-bottom: 25px;
+					float: none;
+				}
+				.contact:first-of-type {
+					margin-right: 0px;
+				}
+			}
+			#contact-description {
+				width: 340px;
+				margin-right: 50px;
+				// margin-left: 50px;
+			}
+		}
+		#locations {
+			padding-top: 50px;
+			.location {
+				width: 100%;
+				margin-right: 0px;
+				margin-bottom: 25px;
+				iframe {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	#forms {
+		padding-top: 200px;
+		width: Calc(100% - 50px);
+		margin-left: 25px;
+		.form {
+			width: 50%;
+			float: left;
+			margin-bottom: 75px;
+			padding: 0px;
+			.form-inner {
+				.title {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
